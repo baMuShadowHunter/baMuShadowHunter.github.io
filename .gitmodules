@@ -1,0 +1,3 @@
+[submodule "project/Saya-Comics"]
+	path = project/Saya-Comics
+	url = git@github.com:baMuShadowHunter/Saya-Comics.git

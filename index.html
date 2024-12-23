@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BaMu Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji&family=Open+Sans:wght@300;400;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+
+    <body>
+        <section class="main" roll="menu">
+            <!-- Page Navbar -->
+            <nav class="custom-navbar">
+                <div class="container">
+                    <a class="text-logo" href="#">BaMu</a>
+                    <div class="menu-iconn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navv">
+                        <li class="item"><a class="link" href="#home" aria-label="Navigate to Home">Home</a></li>
+                        <li class="item"><a class="link" href="#about" aria-label="Navigate to About">About</a></li>
+                        <li class="item"><a class="link" href="#portfolio" aria-label="Navigate to Projects">Projects</a></li>
+                        <li class="item"><a class="link" href="#contact" aria-label="Navigate to Contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Page Header -->
+            <header id="home" class="header">
+                <div class="overlay"></div>
+                <div class="header-content">
+                    <h1 class="header-title">
+                        <span class="up">HI!</span>
+                        <span class="down">I am Balamurugan</span>
+                    </h1>
+                    <p class="header-subtitle">FULLSTACK DEVELOPER</p>
+                </div>
+            </header>
+
+            <!-- About Section -->
+            <section class="section1" id="about">
+                <div class="container1">
+                    <div class="about">
+                        <div class="about-img-holder">
+                            <img src="bala.png" class="about-img" alt="Balamurugan">
+                        </div>
+                        <div class="about-caption">
+                            <h2 class="section-title">About Me</h2>
+                            <p>
+                                I'm a technical guy with the capacity to pick up new technologies rapidly and apply
+                                them. Proactive problem-solver eager to gain hands-on experience in tech. Seeking
+                                opportunities to grow and apply skills in real-world projects
+                            </p>
+                            <div class="skills-awards">
+                                <div class="skill">
+                                    <h3 onclick="toggleSection('skills-list')">Skills</h3>
+                                    <ul id="skills-list">
+                                        <li>● Web Development (HTML, CSS, JS)</li>
+                                        <li>● Database Management (SQL, MySql)</li>
+                                    </ul>
+                                </div>
+                                <div class="award">
+                                    <h3 onclick="toggleSection('awards-list')">Achievements</h3>
+                                    <ul id="awards-list">
+                                        <li>● First prize winner for paper presentation at SHINE2024, NPA Centenary
+                                            Polytechnic College</li>
+                                        <li>● Runner-up in paper presentation at Coimbatore Institute of Technology</li>
+                                    </ul>
+                                </div>
+                                <div class="education">
+                                    <h3 onclick="toggleSection('education-list')">Education</h3>
+                                    <ul id="education-list">
+                                        <li>● Diploam in Computer Engineering Scored 77.95% Government polytechnic
+                                            college,Coimbatore </li>
+                                        <li>● HR.SEC. in Basic Electrical And Electronic Engineering Scored 78.17%
+                                            Government Boy's Higher Secondary School,Kovilpatti </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section class="projects" id="portfolio">
+                <h2>Projects</h2>
+                <div class="project-card">
+                    <img src="Saya.png" alt="Saya Comics">
+                    <h3>Saya Comics</h3>
+                    <p>
+                        Crafted a dynamic comic showcase platform using HTML, CSS, JavaScript, highlighting creativity
+                        and interactive web development skills.<a class="sayaa" href="/project/Saya-Comics/index.html" target="_blank">View
+                            Project</a>
+                    </p>
+                    <a class="saya1" href="https://github.com/baMuShadowHunter/Saya-Comics" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <img src="voice.jfif" alt="Personal AI Voice Assistant">
+                    <h3>Personal AI Voice Assistant </h3>
+                    <p>
+                        Built an AI Voice Assistant enabling smart tasks like web browsing, app launching, and voice
+                        interactions.
+                    </p>
+                    <a class="saya1" href="https://github.com/baMuShadowHunter/Personal-Ai-Voice-Assistant" target="_blank">View on
+                        GitHub</a>
+                </div>
+                <div class="project-card">
+                    <img src="portfolio1.png" alt="Portfolio">
+                    <h3>Portfolio</h3>
+                    <p>I’m Balamurugan, a Fullstack Developer passionate about building responsive, dynamic web
+                        applications and turning complex ideas into seamless, user-friendly digital experiences.</p>
+                    <a class="saya1" href="https://github.com/baMuShadowHunter/baMuShadowHunter.github.io" target="_blank">View on
+                        GitHub</a>
+                </div>
+            </section>
+
+            <!-- =============================Contact Section=================================================== -->
+
+            <section class="contact" id="contact">
+                <div class="contact-container">
+                    <!-- Left Column: Contact Info -->
+                    <div class="contact-info">
+                        <h2>Contact Me 💬</h2>
+                        <p><strong>Feel free to reach out to me on any of the following platforms:</strong></p>
+                        <!-- Email -->
+                        <p><i class="fas fa-map-marker-alt"></i>177I/1, West Street, Iluppaiyurani, Thoothukudi, Tamil
+                            Nadu - 628502</p>
+                        <!-- Phone -->
+                        <p><i class="fas fa-phone"></i> +91 9876543210</p>
+                        <!-- Social Media Links -->
+                        <div class="social-links">
+                            <a href="https://x.com/BaMu_ShadowHunt" target="_blank" aria-label="X (formerly Twitter)">
+                                <i class="bi bi-twitter-x"></i>
+                            </a>
+                            <a href="https://www.instagram.com/bala_2_6_2_2/" target="_blank" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.facebook.com/profile.php?id=100091882245525" target="_blank"
+                                aria-label="Facebook">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="mailto:bamu6232@gmail.com" target="_blank" aria-label="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="https://github.com/baMuShadowHunter" target="_blank" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/balamurugan-sm/" target="_blank"
+                                aria-label="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://www.threads.net/@bala_2_6_2_2" target="_blank" aria-label="Threads">
+                                <i class="bi bi-threads"></i>
+                            </a>
+
+                        </div>
+                        <a href="BALAMURUGAN.pdf" target="_blank" class="download-btn"
+                            download="Balamurugan_Resume.pdf">
+                            <i class="fas fa-download"></i> Download CV
+                        </a>
+                    </div>
+
+                    <!-- Right Column: Contact Form -->
+                    <div class="contact-form">
+                        <h3>Send a Message</h3>
+                        <form name="submit-to-google-sheet" id="contactForm" action="#" method="post">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5"
+                                required></textarea>
+                            <button type="submit" class="submit-btn">Submit</button>
+                        </form>
+                        <span id="msg" class="success-message"></span>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Footer -->
+            <footer>
+                <p>&copy; 2024 Balamurugan. Made with ❤️ by BaMu.</p>
+            </footer>
+        </section>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
