@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>BaMu Portfolio</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji&family=Open+Sans:wght@300;400;700&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaMu Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji&family=Open+Sans:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
 
-    <body>
+<body>
+    <div class="whole-section">
         <section class="main" roll="menu">
             <!-- Page Navbar -->
             <nav class="custom-navbar">
@@ -28,7 +29,10 @@
                     <ul class="navv">
                         <li class="item"><a class="link" href="#home" aria-label="Navigate to Home">Home</a></li>
                         <li class="item"><a class="link" href="#about" aria-label="Navigate to About">About</a></li>
-                        <li class="item"><a class="link" href="#portfolio" aria-label="Navigate to Projects">Projects</a></li>
+                        <li class="item"><a class="link" href="#projectss"
+                                aria-label="Navigate to Projects">Projects</a></li>
+                        <li class="item"><a class="link" href="Achievements.html"
+                                aria-label="Navigate to Projects">Achievements</a></li>
                         <li class="item"><a class="link" href="#contact" aria-label="Navigate to Contact">Contact</a>
                         </li>
                     </ul>
@@ -47,12 +51,14 @@
                 </div>
             </header>
 
+
+
             <!-- About Section -->
             <section class="section1" id="about">
                 <div class="container1">
                     <div class="about">
                         <div class="about-img-holder">
-                            <img src="bala.png" class="about-img" alt="Balamurugan">
+                            <img src="Assets/Images/bala.jpeg" class="about-img" alt="Balamurugan">
                         </div>
                         <div class="about-caption">
                             <h2 class="section-title">About Me</h2>
@@ -65,64 +71,85 @@
                                 <div class="skill">
                                     <h3 onclick="toggleSection('skills-list')">Skills</h3>
                                     <ul id="skills-list">
-                                        <li>● Web Development (HTML, CSS, JS)</li>
-                                        <li>● Database Management (SQL, MySql)</li>
+                                        <li> Web Development (HTML, CSS, JS)</li>
+                                        <li> Database Management (SQL, MySql)</li>
                                     </ul>
+
                                 </div>
                                 <div class="award">
                                     <h3 onclick="toggleSection('awards-list')">Achievements</h3>
                                     <ul id="awards-list">
-                                        <li>● First prize winner for paper presentation at SHINE2024, NPA Centenary
+                                        <li> First prize winner for paper presentation at SHINE2024, NPA Centenary
                                             Polytechnic College</li>
-                                        <li>● Runner-up in paper presentation at Coimbatore Institute of Technology</li>
+                                        <li> Runner-up in paper presentation at Coimbatore Institute of Technology</li>
+                                        <a href="Achievements.html" target="_self" class="showmore-btn" style="font-weight: 500;">
+                                            <span>Show More</span> <span style="font-size: 15px; margin-top: 4px;">↗</span>
+                                        </a>
                                     </ul>
+
+
                                 </div>
+
                                 <div class="education">
                                     <h3 onclick="toggleSection('education-list')">Education</h3>
                                     <ul id="education-list">
-                                        <li>● Diploam in Computer Engineering Scored 77.95% Government polytechnic
+                                        <li> Diploam in Computer Engineering Scored 77.95% Government polytechnic
                                             college,Coimbatore </li>
-                                        <li>● HR.SEC. in Basic Electrical And Electronic Engineering Scored 78.17%
+                                        <li> HR.SEC. in Basic Electrical And Electronic Engineering Scored 78.17%
                                             Government Boy's Higher Secondary School,Kovilpatti </li>
                                     </ul>
                                 </div>
+
+
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
+
             <!-- Projects Section -->
-            <section class="projects" id="portfolio">
+            <section class="projects" id="projectss">
                 <h2>Projects</h2>
                 <div class="project-card">
-                    <img src="Saya.png" alt="Saya Comics">
+                    <img src="Assets/Images/Saya.png" alt="Saya Comics">
                     <h3>Saya Comics</h3>
                     <p>
                         Crafted a dynamic comic showcase platform using HTML, CSS, JavaScript, highlighting creativity
-                        and interactive web development skills.<a class="sayaa" href="/project/Saya-Comics/index.html" target="_blank">View
+                        and interactive web development skills.<a class="sayaa" href="https://bamushadowhunter.github.io/Saya-Comics/"
+                            target="_blank">View
                             Project</a>
                     </p>
-                    <a class="saya1" href="https://github.com/baMuShadowHunter/Saya-Comics" target="_blank">View on GitHub</a>
+                    <a class="saya1" href="https://github.com/baMuShadowHunter/Saya-Comics" target="_blank">View on
+                        GitHub</a>
                 </div>
                 <div class="project-card">
-                    <img src="voice.jfif" alt="Personal AI Voice Assistant">
+                    <img src="Assets/Images/voice.jfif" alt="Personal AI Voice Assistant">
                     <h3>Personal AI Voice Assistant </h3>
                     <p>
                         Built an AI Voice Assistant enabling smart tasks like web browsing, app launching, and voice
                         interactions.
                     </p>
-                    <a class="saya1" href="https://github.com/baMuShadowHunter/Personal-Ai-Voice-Assistant" target="_blank">View on
+                    <a class="saya1" href="https://github.com/baMuShadowHunter/Personal-Ai-Voice-Assistant"
+                        target="_blank">View on
                         GitHub</a>
                 </div>
                 <div class="project-card">
-                    <img src="portfolio1.png" alt="Portfolio">
+                    <img src="Assets/Images/portfolio1.png" alt="Portfolio">
                     <h3>Portfolio</h3>
                     <p>I’m Balamurugan, a Fullstack Developer passionate about building responsive, dynamic web
                         applications and turning complex ideas into seamless, user-friendly digital experiences.</p>
-                    <a class="saya1" href="https://github.com/baMuShadowHunter/baMuShadowHunter.github.io" target="_blank">View on
+                    <a class="saya1" href="https://github.com/baMuShadowHunter/baMuShadowHunter.github.io"
+                        target="_blank">View on
                         GitHub</a>
                 </div>
+
+                <div>
+                    <a href="Projects.html" target="_self" class="showmore-btn-2" style="font-weight: 500;">
+                        <span>Show More</span><span style="font-size: 15px; margin-top: 4px;">↗</span>
+                    </a>
+                </div>
+
             </section>
 
             <!-- =============================Contact Section=================================================== -->
@@ -156,8 +183,7 @@
                             <a href="https://github.com/baMuShadowHunter" target="_blank" aria-label="GitHub">
                                 <i class="fab fa-github"></i>
                             </a>
-                            <a href="https://www.linkedin.com/in/balamurugan-sm/" target="_blank"
-                                aria-label="LinkedIn">
+                            <a href="https://www.linkedin.com/in/balamurugan-sm/" target="_blank" aria-label="LinkedIn">
                                 <i class="fab fa-linkedin"></i>
                             </a>
                             <a href="https://www.threads.net/@bala_2_6_2_2" target="_blank" aria-label="Threads">
@@ -165,7 +191,7 @@
                             </a>
 
                         </div>
-                        <a href="BALAMURUGAN.pdf" target="_blank" class="download-btn"
+                        <a href="Assets/Documents/BALAMURUGAN.pdf" target="_blank" class="download-btn"
                             download="Balamurugan_Resume.pdf">
                             <i class="fas fa-download"></i> Download CV
                         </a>
@@ -180,7 +206,7 @@
                             <textarea id="message" name="message" placeholder="Your Message" rows="5"
                                 required></textarea>
                             <button type="submit" class="submit-btn">Submit</button>
-                        </form>
+                        </form> 
                         <span id="msg" class="success-message"></span>
                     </div>
                 </div>
@@ -192,8 +218,8 @@
                 <p>&copy; 2024 Balamurugan. Made with ❤️ by BaMu.</p>
             </footer>
         </section>
-
-        <script src="script.js"></script>
-    </body>
+    </div>
+    <script src="script.js"></script>
+</body>
 
 </html>

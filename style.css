@@ -1,4 +1,3 @@
-/* Reset Styles */
 * {
     margin: 0;
     padding: 0;
@@ -12,40 +11,36 @@ a {
     text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+.main {
+    width: 0 15% 0 25%;
+}
+
 /* =============================navv Bar======================================================*/
 
-/* General Text Logo Styling */
 .text-logo {
     font-size: 33px;
-    /* Default font size */
     font-weight: bold;
     color: navy;
-    /* Logo color */
     font-family: 'Baloo Paaji', cursive;
-    /* Preferred font */
     transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
-    /* Smooth transition for zoom and color */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    /* Add subtle text shadow */
 }
 
 .text-logo:hover {
     transform: scale(1.3);
-    /* Zoom effect */
     color: #ff6f61;
-    /* Change to a vibrant color on hover */
     text-shadow: 3px 3px 10px rgba(255, 111, 97, 0.7);
-    /* Glow effect */
 }
 
 /* Navbar Styling */
 .custom-navbar {
     display: flex;
-    /* Flexbox for proper alignment */
     justify-content: space-between;
-    /* Space between logo and nav items */
     align-items: center;
-    /* Center items vertically */
     font-family: 'Baloo Paaji', cursive;
     text-transform: uppercase;
     font-weight: 500;
@@ -55,31 +50,24 @@ a {
     left: 0;
     width: 100%;
     padding: 15px 50px;
-    /* Adjusted padding */
     margin-top: 20px;
-    /* Adjusted top space */
     box-sizing: border-box;
     z-index: 1;
-    /* Ensure it stays above content */
     transition: all 0.7s ease-in-out;
-    /* Smooth transition */
     background: transparent;
-    /* Transparent background */
     background-color: transparent;
     box-shadow: none;
-    /* Remove shadow */
 }
 
 .custom-navbar.scrolled {
-    background-color: rgba(173, 155, 155, 0.459);
-    /* Subtle background on scroll */
+    background-color: rgba(245, 245, 245, 0.818);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    /* Light shadow on scroll */
     transition: all ease 0.7s;
     animation: navbarJump 0.5s ease-in-out;
     margin-top: 0px;
-    /* Adjusted top space */
-
+}
+.custom-navbar.scrolled .navv li a {
+    color: black;
 }
 
 /* Jumping effect */
@@ -134,15 +122,12 @@ a {
 .navv li a {
     padding: 12px 18px;
     color: white;
-    font-size: 16px;
-    /* Slightly larger font */
+    font-size: 14px;
     font-family: 'Baloo Paaji', cursive;
     text-decoration: none;
     transition: color 0.3s ease, transform 0.3s ease;
     border-radius: 0;
-    /* Removed background rounding */
     background: transparent;
-    /* Transparent background */
 }
 
 .navv li a::after {
@@ -164,17 +149,14 @@ a {
 .navv li a.active {
     font-weight: 700;
     transform: scale(1.2);
-    /* Slight zoom effect */
     transition: all 0.4s ease;
     color: #ff6f61;
-    /* Highlight link text */
 }
 
 /* Responsive Navbar Styling */
 @media screen and (max-width: 768px) {
     .navv {
         flex-direction: column;
-        /* Stack items */
         gap: 10px;
         position: absolute;
         top: 60px;
@@ -185,12 +167,10 @@ a {
 
     .navv.active {
         display: flex;
-        /* Show menu on toggle */
     }
 
     .text-logo {
         margin-right: auto;
-        /* Adjust logo alignment */
     }
 
     .hamburger {
@@ -208,7 +188,6 @@ a {
 
 .hamburger.active {
     color: #ff6f61;
-    /* Highlighted color on toggle */
 }
 
 @media screen and (max-width: 768px) {
@@ -220,7 +199,6 @@ a {
         position: absolute;
         top: 30px;
         right: 20px;
-        /* Position in the top-right corner */
         z-index: 2;
     }
 
@@ -267,8 +245,6 @@ a {
 
 
 
-
-/* General Styles */
 body {
     margin: 0;
     font-family: "Open Sans", sans-serif;
@@ -288,7 +264,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(header.jpg);
+    background-image: url(Assets/Images/header.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -342,6 +318,24 @@ body {
     color: #212529;
 }
 
+
+@media (max-width: 1024px) {
+    .header-content {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .header .header-content .header-title .up,
+    .header .header-content .header-title .down {
+        font-size: 4.2rem;
+    }
+
+    .header .header-content .header-subtitle {
+        font-size: 1.5rem;
+        letter-spacing: 0.5px;
+    }
+}
+
 @media (max-width: 768px) {
     .header-content {
         padding-left: 15px;
@@ -350,29 +344,28 @@ body {
 
     .header .header-content .header-title .up,
     .header .header-content .header-title .down {
-        font-size: 2.5rem;
+        font-size: 3.5rem;
     }
 
     .header .header-content .header-subtitle {
-        font-size: 0.9rem;
+        font-size: 1.7rem;
         letter-spacing: 0.5px;
     }
 }
 
-@media (max-width: 576px) {
-    .header {
-        height: 80vh;
-        min-height: 500px;
+@media (max-width: 425px) {
+
+    .header .header-content .header-title .up,
+    .header .header-content .header-title .down {
+        font-size: 2.8rem;
     }
 
-    .header .header-content {
-        text-align: center;
-        padding: 10px;
+    .header .header-content .header-subtitle {
+        font-size: 1.2rem;
+        letter-spacing: 0.5px;
     }
 
-    .header-title {
-        font-size: 1.8rem;
-    }
+
 }
 
 
@@ -380,20 +373,16 @@ body {
 /*=============================== Page about ================================== */
 
 
-/* General styling */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f7f7f7;
-    /* Light background for the page */
 }
 
-/* About section styling */
 .section1 {
-    padding: 80px 0;
+    padding: 80px 0 80px 0;
     background-color: #f0f8ff;
-    /* Light blue background color for the About section */
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
@@ -408,16 +397,16 @@ body {
     flex-wrap: wrap;
 }
 
-/* About section specific styling */
+
 .about {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 40px;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-/* Image holder */
+
 .about-img-holder {
     flex: 1;
     text-align: center;
@@ -433,19 +422,15 @@ body {
 
 .about-img:hover {
     transform: scale(1.05);
-    /* Slightly enlarge the image on hover */
     box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.15);
-    /* Enhanced shadow */
 }
 
-/* About caption */
 .about-caption {
     flex: 2;
     max-width: 600px;
     color: #333;
 }
 
-/* Section title */
 .section-title {
     font-family: "Open Sans", sans-serif;
     font-size: 36px;
@@ -455,16 +440,16 @@ body {
     text-align: center;
 }
 
-/* About paragraph */
 .about-caption p {
     font-size: 18px;
     line-height: 1.6;
     color: #555;
     margin-bottom: 30px;
-    text-align: center;
+    text-align: justify;
+
 }
 
-/* Skills, Awards, Education styling */
+/*-------- Skills, Awards, Education styling------- */
 .skills-awards {
     margin-top: 40px;
     display: flex;
@@ -474,12 +459,12 @@ body {
     text-align: center;
 }
 
-/* Skill, Award, Education Section Styling */
 .skills-awards .skill,
 .skills-awards .award,
 .skills-awards .education {
     width: 30%;
     cursor: pointer;
+
     transition: transform 0.3s ease;
 }
 
@@ -493,7 +478,7 @@ body {
     margin-bottom: 10px;
 }
 
-/* Hover effect underline */
+
 .skills-awards h3::after {
     content: '';
     width: 0;
@@ -509,17 +494,18 @@ body {
     width: 100%;
 }
 
-/* List styling for Skills, Awards, Education */
 .skills-awards ul {
     list-style-type: none;
     padding: 0;
     margin-top: 20px;
     color: #555;
+    text-align: justify;
     display: none;
+    list-style: disc;
+
     transition: all 0.3s ease;
 }
 
-/* Show section content when clicked */
 .skills-awards ul.show {
     display: block;
 }
@@ -530,69 +516,59 @@ body {
     text-align: left;
 }
 
-/* Hover effect on sections */
 .skills-awards .skill:hover,
 .skills-awards .award:hover,
 .skills-awards .education:hover {
     transform: translateY(-10px);
 }
 
-/* Button styling */
+
 .buttons {
     text-align: center;
     margin-top: 30px;
 }
 
-/* Button Styling for Download CV */
-/* Button Styling for Download CV */
-.btn-cv {
-    padding: 10px 20px;
-    /* Reduced padding */
+.showmore-btn {
+    padding: 8px 15px;
     background-color: #007bff;
     color: white;
     text-decoration: none;
-    border-radius: 13px;
-    /* Rounded corners */
-    font-size: 16px;
-    /* Smaller font size */
+    border-radius: 23px;
+    font-size: 13px;
     text-align: center;
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    /* Space between icon and text */
 }
 
-/* Hover effect on the button */
-.btn-cv:hover {
+.showmore-btn-2 {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 23px;
+    font-size: 13px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.showmore-btn:hover {
     background-color: #0056b3;
     transform: translateY(-5px);
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Icon Styling */
-.btn-cv i {
-    font-size: 18px;
-    /* Adjust icon size to match the button */
-}
-
-/* Adjust for smaller screens if needed */
-@media (max-width: 768px) {
-    .btn-cv {
-        font-size: 14px;
-        /* Reduce font size on smaller screens */
-        padding: 8px 15px;
-        /* Adjust padding for small screens */
-    }
-
-    .btn-cv i {
-        font-size: 16px;
-        /* Adjust icon size on smaller screens */
-    }
+.showmore-btn-2:hover {
+    background-color: #0056b3;
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 
-/* Responsive styling */
 @media screen and (max-width: 768px) {
     .about {
         flex-direction: column;
@@ -618,12 +594,29 @@ body {
         width: 100%;
     }
 
+    .skills-awards ul {
+        margin-left: 10%;
+    }
+
     .section-title {
         font-size: 28px;
     }
 
-    .btn-cv {
+    .showmore-btn {
         font-size: 16px;
+        padding: 8px 15px;
+        margin-left: 34%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .about-img {
+        /* align-items: center; */
+        margin-left: 0%;
+    }
+
+    .showmore-btn {
+        margin-left: 24%;
     }
 }
 
@@ -631,18 +624,14 @@ body {
 
 /* ================================Page Project=======================================  */
 
-
-/* Global styles */
 body {
     font-family: 'Poppins', Arial, sans-serif;
-    /* A more modern and elegant font */
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
     color: #333;
 }
 
-/* Projects section styles */
 .projects {
     text-align: center;
     padding: 70px 0;
@@ -658,7 +647,6 @@ body {
     letter-spacing: 2px;
 }
 
-/* Project card container */
 .project-card {
     display: inline-block;
     background-color: #fff;
@@ -666,7 +654,6 @@ body {
     padding: 20px;
     margin: 20px;
     width: 300px;
-    /* Adjust width as needed */
     text-align: center;
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -677,7 +664,6 @@ body {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Image styling */
 .project-card img {
     max-width: 100%;
     height: auto;
@@ -690,7 +676,6 @@ body {
     transform: scale(1.05);
 }
 
-/* Project card heading */
 .project-card h3 {
     font-size: 26px;
     margin-bottom: 10px;
@@ -698,7 +683,6 @@ body {
     font-weight: bold;
 }
 
-/* Project card description */
 .project-card p {
     font-size: 16px;
     line-height: 1.6;
@@ -706,7 +690,6 @@ body {
     color: #555;
 }
 
-/* CTA button styling */
 .saya1 {
     display: inline-block;
     background-color: #007bff;
@@ -736,26 +719,28 @@ body {
     color: blue;
 }
 
+@media screen and (max-width: 320px) {
+    .project-card {
+        width: 240px;
+    }
+}
+
+
 
 /*==================================== Contact Section ========================================== */
 
-/* General styles */
 body {
     font-family: 'Inter', sans-serif;
-    /* Elegant, modern font */
     margin: 0;
     padding: 0;
     color: #333;
-    /* Darker text for better readability */
     background: #f7f7f7;
-    /* Soft light background for a clean look */
 }
 
 header {
     text-align: center;
     padding: 40px 0;
     background: #222222;
-    /* Dark, professional background */
 }
 
 header h1 {
@@ -763,13 +748,11 @@ header h1 {
     font-size: 3rem;
     color: #fff;
     font-family: 'Merriweather', serif;
-    /* Serif font for the header for an elegant touch */
 }
 
 header p {
     font-size: 1.2rem;
     color: #e0e0e0;
-    /* Soft gray for the subtitle text */
 }
 
 .contact {
@@ -786,16 +769,15 @@ header p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .contact-info {
     flex: 1;
     padding: 20px;
     background: #ffffff;
-    /* White background for contact info */
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    /* Subtle shadow for a modern feel */
     margin-right: 20px;
 
 }
@@ -805,7 +787,6 @@ header p {
     margin-bottom: 15px;
     margin-top: 20px;
     color: #222;
-    /* Dark color for headings */
 }
 
 .contact-info p {
@@ -815,36 +796,29 @@ header p {
     align-items: center;
     gap: 10px;
     color: #555;
-    /* Slightly darker text for better readability */
 }
 
 .social-links {
-    margin: 20px 0;
-    margin-left: -110px;
     display: flex;
-    gap: 15px;
-    /* Space between icons */
-    justify-content: center;
-    /* justify-content: center; Align icons to center */
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+    margin: 20px 0;
+    padding: 0;
 }
 
 .social-links a {
     font-size: 2rem;
-    /* Icon size */
-    margin: 0 10px;
-    color: #3498db;
-    /* Default professional blue color */
-    transition: transform 0.3s ease;
-    /* Smooth transform transition */
-    display: inline-block;
+    color: #007bff;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .social-links a:hover {
     transform: translateY(-8px) scale(1.1);
-    /* Move up and slightly scale */
 }
 
-/* Optional: Different hover colors for each specific icon */
 .social-links a:hover .bi.bi-twitter-x {
     color: #0c0c0c;
 }
@@ -879,11 +853,9 @@ header p {
     color: #000000;
 }
 
-/* Threads */
 
 .download-btn {
-    background: #3498db;
-    /* Matching button color */
+    background-color: #007bff;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -897,7 +869,6 @@ header p {
 .download-btn:hover {
     transform: scale(1.05);
     background: #2980b9;
-    /* Darker blue on hover */
 }
 
 .contact-form {
@@ -914,9 +885,7 @@ header p {
     padding: 12px;
     margin: 12px 0;
     background: #f7f7f7;
-    /* Light background for form fields */
     border: 1px solid #ddd;
-    /* Soft border for inputs */
     border-radius: 5px;
     color: #333;
     font-size: 1rem;
@@ -924,7 +893,7 @@ header p {
 
 .contact-form .submit-btn {
     width: 100%;
-    background: #3498db;
+    background-color: #007bff;
     border: none;
     padding: 12px;
     color: white;
@@ -940,42 +909,60 @@ header p {
 
 #msg {
     color: #10e96a;
-    /* Green color for success messages */
     font-weight: bold;
     margin-top: 1px;
-
     display: block;
 }
+
+
 
 @media screen and (max-width: 768px) {
     .contact {
         flex-direction: column;
-        /* Stack columns vertically */
         align-items: center;
-        /* Center-align content */
-
     }
 
-    .social-links {
-        gap: 10px;
-        /* Adjust spacing for smaller screens */
-        margin-left: 6px;
+    .contact-container {
+        flex-direction: column;
     }
 
     .contact-info,
     .contact-form {
         flex: 1;
-
         margin: 0;
-        /* Remove extra margin */
     }
 
-    .social-links {
-        justify-content: center;
-        /* Center-align icons */
+    .social-links i {
+        font-size: 24px;
     }
 }
 
+@media screen and (max-width: 425px) {
+    .contact-container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .social-links {
+
+        /* justify-content: center; */
+        gap: 13px;
+    }
+
+    .social-links a {
+        font-size: 2rem;
+    }
+
+    .download-btn {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+
+    .about-caption p {
+        text-align: center;
+    }
+}
 
 footer {
     text-align: center;
