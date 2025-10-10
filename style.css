@@ -729,6 +729,12 @@ body {
         width: 220px;
     }
 }
+@media screen and (max-width: 375px) {
+    .project-card {
+        width: 250px;
+    }
+}
+
 
 
 
